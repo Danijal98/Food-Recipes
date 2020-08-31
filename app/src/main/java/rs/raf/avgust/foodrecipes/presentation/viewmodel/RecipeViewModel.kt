@@ -153,6 +153,7 @@ class RecipeViewModel (
         val subscription = recipeRepository
             .saveMeal(
                 SavedRecipeEntity(
+                    room_id = 0,
                     id = recipe.id,
                     title = recipe.title,
                     publisher = recipe.publisher,

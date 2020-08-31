@@ -14,7 +14,7 @@ abstract class RecipeDao {
     @Insert( onConflict =  OnConflictStrategy.REPLACE )
     abstract fun insertAll(entities: List<RecipeEntity>): Completable
 
-    @Insert
+    @Insert ( onConflict = OnConflictStrategy.IGNORE )
     abstract fun saveMeal(meal: SavedRecipeEntity): Completable
 
     @Query("SELECT * FROM savedRecipes")

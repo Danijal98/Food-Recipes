@@ -11,7 +11,7 @@ import rs.raf.avgust.foodrecipes.data.models.SavedRecipeEntity
 
 @Database(
     entities = [RecipeEntity::class, IngredientsEntity::class, SavedRecipeEntity::class],
-    version = 8,
+    version = 9,
     exportSchema = false
 )
 @TypeConverters(StringListConverter::class, DateConverter::class)

@@ -96,6 +96,7 @@ class MainActivity : AppCompatActivity() {
                 savedRecycleView.visibility = View.GONE
                 recipeRecyclerView.visibility = View.GONE
                 recipeViewModel.deleteMeals()
+                pageNum = 1
                 return true
             }
 
@@ -108,6 +109,7 @@ class MainActivity : AppCompatActivity() {
             override fun onQueryTextSubmit(text: String?): Boolean {
                 if (text != null) {
                     search = text
+                    recipeViewModel.deleteMeals()
                     recipeViewModel.getMeals(RecipeFilter(text))
                     recipeViewModel.fetchMealPage(text, "1")
                 }
@@ -128,6 +130,7 @@ class MainActivity : AppCompatActivity() {
             savedRecycleView.visibility = View.GONE
             categoryRecyclerView.visibility = View.VISIBLE
             recipeViewModel.deleteMeals()
+            pageNum = 1
             true
         }
 
@@ -137,6 +140,7 @@ class MainActivity : AppCompatActivity() {
             categoryRecyclerView.visibility = View.GONE
             savedRecycleView.visibility = View.VISIBLE
             recipeViewModel.deleteMeals()
+            pageNum = 1
             true
         }
 

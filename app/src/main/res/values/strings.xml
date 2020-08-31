@@ -6,4 +6,6 @@
     <string name="ingredients">Ingredients</string>
     <string name="add_to_menu">Add To Menu</string>
     <string name="no_more_results">No more results... :(</string>
+    <string name="date">Date</string>
+    <string name="category">Category</string>
 </resources>

@@ -6,7 +6,8 @@ import java.util.*
 
 @Entity(tableName = "savedRecipes")
 data class SavedRecipeEntity(
-    @PrimaryKey val id: String,
+    @PrimaryKey(autoGenerate = true) val room_id: Int,
+    val id: String,
     val title: String,
     val publisher: String,
     val recipe_id: String,
