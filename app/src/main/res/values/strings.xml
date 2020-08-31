@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Food Recipes</string>
+    <string name="search">Search</string>
+    <string name="recipe">Recipe</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="add_to_menu">Add To Menu</string>
+    <string name="no_more_results">No more results... :(</string>
+</resources>
